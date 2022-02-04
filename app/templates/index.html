@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extract x509 Cert</title>
+</head>
+<body>
+    <h1>Parse the x509 Cert Value from ADFS XML Metadata</h1>
+    <p>
+        You can either put in the URL to the metadata, or upload the file (plz don't do both) 
+        and click submit. You will be redirected to a page with your x509 cert value!
+    </p>
+    <hr>
+    <form method="post" action="/results" enctype="multipart/form-data">
+        <label for="url">URL</label>
+        <input name="url">
+        
+        <br>
+        <br>
+        <br>
+        
+        <label for="file">File</label>
+        <input name="file" type="file">
+        
+        <br>
+        <br>
+        <br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
